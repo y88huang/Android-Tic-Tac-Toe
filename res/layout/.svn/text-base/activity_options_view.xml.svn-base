@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_view_backgound"
+    >
+  <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         >
+       <TextView
+        android:layout_centerInParent="true"
+        android:id="@+id/optiontitleview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        android:text="Options" />
+</RelativeLayout>
+
+<RelativeLayout
+     android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+    >
+     <TextView
+      android:id="@+id/normalortour"
+      android:layout_alignParentLeft="true"
+      android:layout_marginLeft="15dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/black"
+      android:textSize="45sp"
+      android:text="Normal / Tour" />
+
+     <CheckBox
+         android:id="@+id/modecheck"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/normalortour"
+         android:layout_marginLeft="60dp"
+         style="@style/CustomCheckBoxTheme"/>    
+</RelativeLayout>
+ <RelativeLayout 
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content">
+     <TextView
+      android:id="@+id/OorXfirst"
+      android:layout_alignParentLeft="true"
+      android:layout_marginLeft="18dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/black"
+      android:textSize="45sp"
+      android:text="O first / X first" />
+     <CheckBox
+         android:id="@+id/oxcheckbox"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/OorXfirst"
+         android:layout_marginLeft="30dp"
+         style="@style/CustomCheckBoxTheme2"/> 
+ </RelativeLayout>
+  <RelativeLayout 
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content">
+     <TextView
+      android:id="@+id/Oname"
+      android:layout_alignParentLeft="true"
+      android:layout_marginLeft="20dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/black"
+      android:textSize="45sp"
+      android:text="O's name" />
+     
+     <EditText  
+    android:id="@+id/Oname_text"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_marginRight="40dp"
+    android:layout_alignParentRight="true"
+    android:inputType="textCapWords"
+    android:imeOptions="actionDone"
+    android:maxLength="8"
+    android:textColor="@color/black"
+    android:background="@drawable/buttonline_drawable" />
+ </RelativeLayout>
+ 
+  <RelativeLayout 
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="-5dp">
+     <TextView
+      android:id="@+id/Xname"
+      android:layout_alignParentLeft="true"
+      android:layout_marginLeft="22dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/black"
+      android:textSize="45sp"
+      android:text="X's name" />
+      <EditText  
+    android:id="@+id/Xname_text"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_marginRight="40dp"
+    android:layout_alignParentRight="true"
+    android:inputType="textCapWords"
+    android:imeOptions="actionDone"
+    android:textColor="@color/black"
+    android:maxLength="8"
+    android:background="@drawable/buttonline_drawable" />
+ </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+<RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+         >
+       
+        <Button
+            android:id="@+id/newgamebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/image_new_game_border"
+            android:textSize="60sp"
+            android:text="New Game" />
+        <TextView
+        android:id="@+id/gameStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="55sp"
+        android:text="Select Options" />     
+    </RelativeLayout>
+    
+    <TableLayout
+        android:id="@+id/tlGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="301dp"
+        android:layout_weight="0.15"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/tictac00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxWidth="105dp"
+                android:minWidth="105dp"
+                 android:minHeight="105dp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/tictac01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxWidth="105dp"
+                android:minWidth="105dp"
+                 android:minHeight="105dp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/tictac02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxWidth="105dp"
+                android:minWidth="105dp"
+                 android:minHeight="105dp"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/tictac10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxWidth="105dp"
+                android:minWidth="105dp"
+                 android:minHeight="105dp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/tictac11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxWidth="105dp"
+                android:minWidth="105dp"
+                 android:minHeight="105dp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/tictac12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxWidth="105dp"
+                android:minWidth="105dp"
+                 android:minHeight="105dp"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/tictac20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxWidth="105dp"
+                android:minWidth="105dp"
+                android:minHeight="105dp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/tictac21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxWidth="105dp"
+                android:minWidth="105dp"
+                 android:minHeight="105dp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/tictac22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="105dp"
+                android:background="@null"
+                android:minWidth="105dp"
+                 android:minHeight="105dp"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+    <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_weight="0.65"
+        android:layout_height="wrap_content">
+       <TextView
+        android:id="@+id/nameOfPlayerOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/Vs"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:textSize="40sp"
+       /> 
+        <TextView
+        android:id="@+id/Vs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="50sp"
+        android:text="VS" />  
+        <TextView
+        android:id="@+id/nameOfPlayerTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Vs"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        
+        android:textSize="40sp"
+        />  
+    </RelativeLayout>
+   
+
+         <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:textSize="60sp"
+            android:text="History" />
+
+        <Button
+            android:id="@+id/optionbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textSize="60sp"
+            android:text="Option"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    
+
+</LinearLayout>
